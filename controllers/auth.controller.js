@@ -9,7 +9,7 @@ import {
 } from '../models/user.model.js';
 // Register
 export const registerUser = async (req, res) => {
-  const { email, password, role = 'passager',nom,prenom } = req.body;
+  const { email, password, role = 'passanger',nom,prenom } = req.body;
   try {
     const user = await findUserByEmail(email);
     if(!user){
